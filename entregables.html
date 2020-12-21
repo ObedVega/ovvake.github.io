@@ -1,25 +1,207 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-<title>Entregables</title>  
+    <title>Entregables</title>  
+<!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+<link rel="stylesheet" href="css/style.css" >
+<link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" sizes="57x57" href="img/icon.png">
 </head>
-
 <body>
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="pb-10">
+    <div class="flex items-center">
+        <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">Entregables</h1>
+    </div>
+</div>
 
- 
-<div class="">
-    <h1>Entregables</h1>
-    <table border="1">
-        <tr>
-            <td>Archivo</td><td>Tarea</td><td>fecha de inicio</td><td>fecha finalizacion </td><td colspan="3">status</td>
-        </tr>
-        <tr>
-            <td>registro</td><td>forma de registro</td><td>00-00-0000</td><td>00-00-0000</td><td bgcolor=""></td><td bgcolor="yellow"></td><td bgcolor=""></td>
-        </tr>
-        <tr>
-            <td>registro</td><td>Validacion de la contrasena</td><td>00-00-0000</td><td>00-00-0000</td><td bgcolor=""></td><td bgcolor="yellow"></td><td bgcolor=""></td>
-        </tr>
-    </table>
+<div class="flex flex-col">
+  <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+    <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+      <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-gray-50">
+            <tr>
+                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    #
+                  </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Archivo
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Tarea
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                Asignado
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                fecha de inicio
+              </th>    
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                fecha de finalizacion
+              </th>   
+              </th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                status
+              </th>   			  <!-- <th scope="col" class="relative px-6 py-3"> -->
+                <!-- <span class="sr-only">Edit</span> -->
+              <!-- </th>
+ -->	
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+<!-- 1               -->
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                    1
+                </td>                
+                <td class="px-6 py-4 whitespace-nowrap">
+                  Registro
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">Forma de registro</div>
+                  <div class="text-sm text-gray-500"><div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap">
+                  OV
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  00-00-0000
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  00-00-0000
+                </td>
+                <!-- <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                </td> -->
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-green-800">
+                     Waiting 
+                  </span>  
+                  <!-- <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-green-800">
+                     In Development
+                  </span>                  -->
+                  <!-- <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                    Developed
+                  </span> -->
+                </td>
+              </tr>
+ <!-- 2              -->
+            <tr>
+                <td class="px-6 py-4 whitespace-nowrap">
+                    2
+                </td> 
+              <td class="px-6 py-4 whitespace-nowrap">
+                Registro
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm text-gray-900">Forma de registro</div>
+                <div class="text-sm text-gray-500">Validar contrasena que se igual antes de grabar<div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap">
+                MN
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                00-00-0000
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                00-00-0000
+              </td>
+              <!-- <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+              </td> -->
+              <td class="px-6 py-4 whitespace-nowrap">
+                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-green-800">
+                   Waiting 
+                </span>  
+                <!-- <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-green-800">
+                   In Development
+                </span>                  -->
+                <!-- <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                  Developed
+                </span> -->
+              </td>
+            </tr>
+<!-- 3             -->
+<tr>
+    <td class="px-6 py-4 whitespace-nowrap">
+        3
+    </td> 
+    <td class="px-6 py-4 whitespace-nowrap">
+      Login
+    </td>
+    <td class="px-6 py-4 whitespace-nowrap">
+      <div class="text-sm text-gray-900">Forma de acceso</div>
+      <div class="text-sm text-gray-500"><div>
+    </td>
+    <td class="px-6 py-4 whitespace-nowrap">
+      
+    </td>
+    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+      00-00-0000
+    </td>
+    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+      00-00-0000
+    </td>
+    <!-- <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+      <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+    </td> -->
+    <td class="px-6 py-4 whitespace-nowrap">
+      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-green-800">
+         Waiting 
+      </span>  
+      <!-- <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-green-800">
+         In Development
+      </span>                  -->
+      <!-- <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+        Developed
+      </span> -->
+    </td>
+  </tr>
+ <!-- 4  -->
+ <tr>
+    <td class="px-6 py-4 whitespace-nowrap">
+        4
+    </td> 
+    <td class="px-6 py-4 whitespace-nowrap">
+      Login
+    </td>
+    <td class="px-6 py-4 whitespace-nowrap">
+      <div class="text-sm text-gray-900">Forma de acceso</div>
+      <div class="text-sm text-gray-500">Validar el acceso: correo incorrecto o contrasena incorrecta<div>
+    </td>
+    <td class="px-6 py-4 whitespace-nowrap">
+      
+    </td>
+    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+      00-00-0000
+    </td>
+    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+      00-00-0000
+    </td>
+    <!-- <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+      <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+    </td> -->
+    <td class="px-6 py-4 whitespace-nowrap">
+      <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-green-800">
+         Waiting 
+      </span>  
+      <!-- <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-100 text-green-800">
+         In Development
+      </span>                  -->
+      <!-- <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+        Developed
+      </span> -->
+    </td>
+  </tr>
+            <!-- More rows... -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
 
 </body>
